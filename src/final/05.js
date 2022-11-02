@@ -15,12 +15,13 @@ function Tilt({children}) {
       glare: true,
       'max-glare': 0.5,
     }
-    VanillaTilt.init(tiltNode, vanillaTiltOptions)
-    return () => tiltNode.vanillaTilt.destroy()
+    // VanillaTilt.init(tiltNode, vanillaTiltOptions)
+    // return () => tiltNode.vanillaTilt.destroy()
   }, [])
 
   return (
     <div ref={tiltRef} className="tilt-root">
+      <h1>ugh</h1>
       <div className="tilt-child">{children}</div>
     </div>
   )
